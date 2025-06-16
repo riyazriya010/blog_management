@@ -55,7 +55,7 @@ CLIENT_URL=http://localhost:5173
 ### 4. Run the Server
 
 ```bash
-npm run dev
+npm run start:dev
 ```
 
 Server will run on: `http://localhost:5000`
@@ -81,9 +81,12 @@ npm install
 In `src/api/axios.ts` or wherever you define Axios instance:
 
 ```ts
-const axios = Axios.create({
-  baseURL: "http://localhost:5000/api",
-  withCredentials: true,
+const axiosInstance = axios.create({
+    baseURL: "http://localhost:5000/api",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    withCredentials: true
 });
 ```
 
@@ -114,7 +117,6 @@ App will run on: `http://localhost:5173`
 * View Posts (user-specific)
 * Protected Routes (using JWT)
 * Toast Notifications (React Toastify)
-* Loading Spinners
 * Responsive UI (Tailwind CSS)
 
 ---
@@ -141,15 +143,6 @@ npm run dev
 npm run build
 ```
 
----
-
-## 📦 Deployment (Optional)
-
-* **Frontend**: Vercel or Netlify
-* **Backend**: Render or Railway
-* **Database**: MongoDB Atlas
-
----
 
 ## 🧠 Final Notes
 
