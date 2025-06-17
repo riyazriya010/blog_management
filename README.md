@@ -20,7 +20,7 @@ A full-stack blog application built with **React (TypeScript)** on the frontend 
 
 * Node.js + TypeScript
 * Express.js
-* MongoDB Atlas (Cloud DB)
+* MongoDB For Database
 * Mongoose
 * JWT Authentication
 * Bcrypt (Password Hashing)
@@ -146,7 +146,7 @@ npm run build
 
 ## 🧠 Final Notes
 
-✅ Make sure MongoDB Atlas access is whitelisted to your IP or set to `0.0.0.0/0` for testing.
+✅ Make sure MongoDB access for testing.
 
 ✅ CORS must allow requests from `http://localhost:5173`
 
